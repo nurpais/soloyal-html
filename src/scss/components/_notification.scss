@@ -1,0 +1,11 @@
+.notification {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+
+  // If we need a fixed position
+
+  & > *:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+}

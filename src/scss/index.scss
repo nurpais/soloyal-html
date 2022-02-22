@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// ABSTRACTS
+@import 'abstracts/variables';
+
+// BULMA
+@import '../../node_modules/bulma/sass/utilities/_all.sass';
+@import '../../node_modules/bulma/sass/base/_all.sass';
+@import '../../node_modules/bulma/sass/grid/_all.sass';
+@import '../../node_modules/bulma/sass/components/navbar.sass';
+@import '../../node_modules/bulma/sass/elements/notification.sass';
+@import '../../node_modules/bulma/sass/elements/title.sass';
+
+// TAILWIND UTILITIES
+@import 'tailwindcss/utilities';
+
+// LAYOUTS
+@import 'layout/navbar';
+@import 'layout/container';
+
+// COMPONENTS
+@import 'components/notification';

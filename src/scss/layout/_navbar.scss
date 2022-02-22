@@ -1,0 +1,21 @@
+.navbar > .container {
+  max-width: $navbar-max-width !important;
+  align-items: center;
+}
+
+.navbar-item {
+  padding-left: $navbar-item-padding-x;
+  padding-right: $navbar-item-padding-x;
+  transition: color 0.2s ease-in;
+}
+
+.navbar-burger:hover {
+  color: rgba($white, 0.8);
+  transition: color 0.2s ease-in;
+}
+
+.navbar-menu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}

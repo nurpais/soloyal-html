@@ -1,0 +1,15 @@
+.container {
+  padding-left: $container-padding-x;
+  padding-right: $container-padding-x;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+
+  @include tablet {
+    max-width: 884px + (2 * $container-padding-x);
+  }
+}
+
+.container.container-lg {
+  max-width: $navbar-max-width !important;
+}

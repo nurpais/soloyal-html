@@ -1,0 +1,51 @@
+// COLORS
+$primary: #00a3ff;
+$success: #36b9a7;
+$danger: #ff0000;
+$danger-dark: findDarkColor($danger);
+$white: #fff;
+
+// TYPOGRAPHY
+$text-lg: 1.25rem;
+$text-md: 1.125rem;
+$text-sm: 0.875rem;
+$text-xs: 0.75rem;
+
+$family-primary: 'Roboto', sans-serif;
+$family-secondary: 'Montserrat', sans-serif;
+
+$title-color: $white;
+$title-family: $family-secondary;
+$title-weight: 700;
+
+$subtitle-color: $white;
+$subtitle-family: $family-secondary;
+
+// BODY
+$body-background-color: #121212;
+$body-family: $family-primary;
+$body-font-size: $text-sm;
+$body-color: $white;
+$body-min-width: 320px;
+
+// NAVBAR
+// https://bulma.io/documentation/components/navbar/#variables
+$navbar-background-color: $body-background-color;
+$navbar-item-color: #8f8f8f;
+$navbar-item-hover-color: $white;
+$navbar-item-active-color: $white;
+$navbar-burger-color: $white;
+$navbar-max-width: 984px;
+$navbar-padding-vertical: 1.5rem;
+$navbar-padding-horizontal: 0;
+$navbar-item-padding-y: 1rem;
+$navbar-item-padding-x: 1rem;
+$navbar-item-hover-background-color: transparent;
+
+// NOTIFICATION
+// https://bulma.io/documentation/elements/notification/#variables
+$notification-radius: 6px;
+$notification-padding-ltr: 0.75rem;
+
+// CONTAINER
+$container-padding-x: 16px;
