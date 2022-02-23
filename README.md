@@ -8,13 +8,11 @@ npm i
 
 ## Usage
 
-### Development server
+### Development
 
 ```bash
 npm start
 ```
-
-You can view the development server at `localhost:8080`.
 
 ### Production build
 
