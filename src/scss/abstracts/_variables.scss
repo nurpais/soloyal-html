@@ -14,6 +14,8 @@ $text-xs: 0.75rem;
 $family-primary: 'Roboto', sans-serif;
 $family-secondary: 'Montserrat', sans-serif;
 
+// TITLE, SUBTITLE
+// https://bulma.io/documentation/elements/title/#variables
 $title-color: $white;
 $title-family: $family-secondary;
 $title-weight: 700;
@@ -48,4 +50,21 @@ $notification-radius: 6px;
 $notification-padding-ltr: 0.75rem;
 
 // CONTAINER
-$container-padding-x: 16px;
+// https://bulma.io/documentation/layout/container/#variables
+$gap: 0;
+$container-max-width: 884px;
+
+// SECTION
+// https://bulma.io/documentation/layout/section/#variables
+$section-padding: 0 1rem;
+$section-padding-desktop: 0 0;
+
+// INPUT
+// https://bulma.io/documentation/form/input/#variables
+$input-color: #8f8f8f;
+$input-background-color: #3e3e3e;
+$input-border-color: #323232;
+$input-hover-border-color: #424242;
+$input-focus-border-color: #3e8ed0;
+$input-icon-color: #8f8f8f;
+$input-icon-active-color: #8f8f8f;
