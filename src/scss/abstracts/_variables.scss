@@ -2,14 +2,32 @@
 $primary: #00a3ff;
 $success: #36b9a7;
 $danger: #ff0000;
-$danger-dark: findDarkColor($danger);
+$danger-dark: #cb1f1f;
+$danger-dark-invert: findColorInvert($danger-dark);
 $white: #fff;
+$link: #41a4ff;
+
+$custom-colors: (
+  'error': (
+    $danger-dark,
+    $danger-dark-invert,
+  ),
+);
 
 // TYPOGRAPHY
-$text-lg: 1.25rem;
-$text-md: 1.125rem;
-$text-sm: 0.875rem;
-$text-xs: 0.75rem;
+$text-xs: 0.625rem; // 10px
+$text-sm: 0.75rem; // 12px
+$text-md: 0.875rem; // 14px
+$text-base: 1rem; // 16px
+$text-lg: 1.125rem; // 18px
+$text-xl: 1.25rem; // 20px
+$text-2xl: 1.5rem; // 24px
+$text-3xl: 2rem; // 32px
+$text-4xl: 3rem; // 48px
+
+$sizes: $text-4xl $text-3xl $text-2xl $text-xl $text-lg $text-base $text-md $text-sm $text-xs;
+
+$size-normal: $text-md;
 
 $family-primary: 'Roboto', sans-serif;
 $family-secondary: 'Montserrat', sans-serif;
@@ -26,7 +44,7 @@ $subtitle-family: $family-secondary;
 // BODY
 $body-background-color: #121212;
 $body-family: $family-primary;
-$body-font-size: $text-sm;
+$body-font-size: $text-md;
 $body-color: $white;
 $body-min-width: 320px;
 
@@ -61,10 +79,21 @@ $section-padding-desktop: 0 0;
 
 // INPUT
 // https://bulma.io/documentation/form/input/#variables
-$input-color: #8f8f8f;
-$input-background-color: #3e3e3e;
-$input-border-color: #323232;
-$input-hover-border-color: #424242;
+$input-color: #000;
+$input-background-color: rgba(214, 214, 214, 0.88);
+$input-border-color: transparent;
+$input-hover-border-color: transparent;
 $input-focus-border-color: #3e8ed0;
-$input-icon-color: #8f8f8f;
-$input-icon-active-color: #8f8f8f;
+$input-icon-color: #454545;
+$input-icon-active-color: #454545;
+
+// BUTTONS
+// https://bulma.io/documentation/elements/button/
+$button-padding-vertical: 10px;
+$button-font-size: $text-sm;
+
+// DIVIDER
+// https://bulma-divider.netlify.app/how-to/customize/
+$divider-font-size: $text-xs;
+$divider-margin-size: 5px;
+$divider-text-color: #bababa;

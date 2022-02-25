@@ -1,13 +1,14 @@
 @charset "utf-8";
 
-// FONTS
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 // ABSTRACTS
 @import 'abstracts/variables';
+@import 'abstracts/classes';
 
 // BULMA
+// @import '../../node_modules/bulma/bulma.sass';
 @import '../../node_modules/bulma/sass/utilities/_all.sass';
 @import '../../node_modules/bulma/sass/base/_all.sass';
 @import '../../node_modules/bulma/sass/grid/_all.sass';
@@ -15,11 +16,17 @@
 @import '../../node_modules/bulma/sass/elements/notification.sass';
 @import '../../node_modules/bulma/sass/elements/title.sass';
 @import '../../node_modules/bulma/sass/elements/container.sass';
+@import '../../node_modules/bulma/sass/elements/button.sass';
 @import '../../node_modules/bulma/sass/layout/section.sass';
 @import '../../node_modules/bulma/sass/form/_all.sass';
+@import '../../node_modules/bulma/sass/helpers/color.sass';
+@import '../../node_modules/bulma/sass/helpers/typography.sass';
 
 // TAILWIND UTILITIES
 @import 'tailwindcss/utilities';
+
+// BULMA DIVIDER
+@import '~@creativebulma/bulma-divider';
 
 // LAYOUTS
 @import 'layout/navbar';
@@ -28,3 +35,5 @@
 // COMPONENTS
 @import 'components/notification';
 @import 'components/search-input';
+@import 'components/card';
+@import 'components/form';

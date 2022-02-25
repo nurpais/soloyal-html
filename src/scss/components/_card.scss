@@ -1,0 +1,166 @@
+.card {
+  min-height: 294px;
+  border-radius: 10px;
+  background-color: #2c2b2b;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  line-height: 1.2;
+  display: flex;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__label {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: $text-sm;
+    line-height: 1.2;
+    padding: 4px 10px;
+    border-radius: 3px;
+    background-color: gray;
+    color: $white;
+
+    &--suggested {
+      background-color: #c600b2;
+    }
+
+    &--linking {
+      background-color: $primary;
+    }
+
+    &--fail {
+      background-color: $danger;
+    }
+  }
+
+  &__brand {
+    height: 60px;
+    object-fit: contain;
+  }
+
+  &__body {
+    padding: 80px 24px 8px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    transition: opacity 0.2s ease-out;
+  }
+
+  &__buttons {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover &__buttons {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover &__heading {
+    opacity: 0;
+  }
+
+  &--form &__form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &--form &__body {
+    padding: 34px 16px 8px;
+  }
+
+  &__form-heading {
+    font-size: $text-xs;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+// SKELETON
+.card {
+  &--skeleton,
+  &--skeleton .card__skeleton {
+    display: flex;
+  }
+
+  &__skeleton {
+    display: none;
+    padding: 40px 24px 30px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__skeleton-item {
+    background: linear-gradient(
+      267.78deg,
+      rgba(126, 126, 126, 0.12) 13.12%,
+      rgba(75, 75, 75, 0.701311) 36.82%,
+      rgba(213, 213, 213, 0.528342) 81.78%,
+      rgba(104, 104, 104, 0) 117.92%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-gradient 2s ease infinite;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__skeleton-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  &__skeleton-title {
+    width: 144px;
+    height: 20px;
+    margin-bottom: 5px;
+  }
+  &__skeleton-subtitle {
+    width: 168px;
+    height: 20px;
+  }
+  &__skeleton-text {
+    width: 100%;
+    height: 32px;
+  }
+}
+
+@keyframes skeleton-gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.divider {
+  color: $divider-text-color !important;
+}
+
+.card-columns {
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+
+.card-columns > .column {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="https://kit.fontawesome.com/b8e42dbd46.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body style="padding-bottom: 200px">
     <!-- Navbar -->
     <nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
       <div class="container">
@@ -50,23 +50,194 @@
     <div class="pt-14 md:pt-24">
       <div class="section text-center">
         <h1 class="title is-1">Welcome, John!</h1>
-        <p class="subtitle is-3">Nice! You’ve got 16 programs linked.</p>
+        <p class="subtitle is-2">Nice! You’ve got 16 programs linked.</p>
       </div>
     </div>
 
     <!-- Search form -->
-    <form class="search-form mx-auto mt-2">
+    <!-- <form class="search-form mx-auto mt-2">
       <div class="control has-icons-left">
-        <input class="input is-medium" type="text" placeholder="Search Brands..." />
+        <input class="input is-medium" type="text" />
         <span class="icon is-small is-left">
           <i class="fa-solid fa-magnifying-glass"></i>
         </span>
       </div>
-    </form>
+    </form> -->
     <!-- Search form end -->
 
     <main class="container section mt-9">
-      <p>CARDS</p>
+      <div class="columns card-columns is-multiline is-variable is-7-tablet">
+        <div class="column is-6-tablet is-4-desktop">
+          <div class="card card--skeleton">
+            <div class="card__skeleton">
+              <div class="flex-1">
+                <div class="card__skeleton-item card__skeleton-img"></div>
+                <div class="card__skeleton-item card__skeleton-title"></div>
+                <div class="card__skeleton-item card__skeleton-subtitle"></div>
+              </div>
+              <div class="space-y-2.5">
+                <div class="card__skeleton-item card__skeleton-text"></div>
+                <div class="card__skeleton-item card__skeleton-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-6-tablet is-4-desktop">
+          <div class="card">
+            <img class="card__img" src="./images/card-img.png" alt="" />
+            <span class="card__label card__label--suggested">Suggested</span>
+
+            <div class="card__body">
+              <img class="card__brand" src="./images/card-logo.png" alt="Nike" />
+              <p class="-mt-1">Nike Rewards</p>
+              <h2 class="card__heading is-size-5 has-text-weight-bold">Free Event Access</h2>
+
+              <div class="flex-1"></div>
+
+              <!-- Buttons -->
+              <div class="card__buttons">
+                <button class="button is-primary is-fullwidth" type="button">Join Now</button>
+                <div class="divider">OR</div>
+                <button class="button is-white is-fullwidth" type="button">Sign In</button>
+                <p class="is-size-9 mt-2">Nike Rewards <a href="#" class="has-text-link">Program Terms</a> apply.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-6-tablet is-4-desktop">
+          <div class="card">
+            <img class="card__img" src="./images/card-img.png" alt="" />
+            <span class="card__label card__label--suggested">Suggested</span>
+
+            <div class="card__body">
+              <img class="card__brand" src="./images/card-logo.png" alt="Nike" />
+              <p class="-mt-1">Nike Rewards</p>
+              <h2 class="card__heading is-size-5 has-text-weight-bold">Free Event Access</h2>
+
+              <div class="flex-1"></div>
+
+              <!-- Buttons -->
+              <div class="card__buttons">
+                <button class="button is-primary is-fullwidth" type="button">Join Now</button>
+                <div class="divider">OR</div>
+                <button class="button is-white is-fullwidth" type="button">Sign In</button>
+                <p class="is-size-9 mt-2">Nike Rewards <a href="#" class="has-text-link">Program Terms</a> apply.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-6-tablet is-4-desktop">
+          <div class="card card--form">
+            <img class="card__img" src="./images/card-img.png" alt="" />
+
+            <div class="card__body">
+              <img class="card__brand" src="./images/card-logo.png" alt="Nike" />
+
+              <div class="card__form">
+                <p class="is-size-8 has-text-weight-semibold">Enter your Nike Rewards account info.</p>
+                <div class="flex-1 mt-1">
+                  <div class="space-y-2">
+                    <div class="control">
+                      <input class="input" type="email" placeholder="Email" />
+                    </div>
+
+                    <div class="control has-icons-right">
+                      <input class="input" type="password" placeholder="Password" />
+                      <button class="icon is-medium is-right button-reset">
+                        <i class="fa-solid fa-eye-slash"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="text-right mt-1.5">
+                    <a href="#" class="is-size-8 has-text-white">Forgot Password?</a>
+                  </div>
+                </div>
+
+                <button class="button is-primary is-fullwidth" type="button">Link Account</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-6-tablet is-4-desktop">
+          <div class="card card--form">
+            <img class="card__img" src="./images/card-img.png" alt="" />
+
+            <div class="card__body">
+              <img class="card__brand" src="./images/card-logo.png" alt="Nike" />
+
+              <div class="card__form">
+                <p class="is-size-8 has-text-weight-semibold">Enter your Nike Rewards account info.</p>
+                <div class="flex-1 mt-1">
+                  <div class="space-y-2">
+                    <div class="control">
+                      <input class="input is-error" type="email" placeholder="Email" />
+                      <p class="mt-0.5 is-size-8 has-text-danger">Please enter a valid email address.</p>
+                    </div>
+
+                    <div class="control has-icons-right">
+                      <input class="input is-error" type="password" placeholder="Password" />
+                      <button class="icon is-medium is-right button-reset">
+                        <i class="fa-solid fa-eye-slash"></i>
+                      </button>
+                      <p class="mt-0.5 is-size-8 has-text-danger">Please enter a valid email password.</p>
+                    </div>
+                  </div>
+                  <div class="text-right mt-1.5">
+                    <a href="#" class="is-size-8 has-text-white">Forgot Password?</a>
+                  </div>
+                </div>
+
+                <button class="button is-primary is-fullwidth" type="button">Link Account</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-6-tablet is-4-desktop">
+          <div class="card card--form">
+            <img class="card__img" src="./images/card-img.png" alt="" />
+
+            <div class="card__body">
+              <img class="card__brand" src="./images/card-logo.png" alt="Nike" />
+              <p class="-mt-1">Nike Rewards</p>
+              <div class="flex-1"></div>
+              <h2 class="is-size-5 has-text-weight-bold">Join Nike?</h2>
+
+              <button class="button is-primary mt-9" type="button">Confirm</button>
+            </div>
+          </div>
+        </div>
+        <div class="column is-6-tablet is-4-desktop">
+          <div class="card">
+            <img class="card__img" src="./images/card-img.png" alt="" />
+            <span class="card__label card__label--linking">
+              <i class="fa-solid fa-arrows-rotate mr-1 animate animate-spin"></i> Linking...</span
+            >
+
+            <div class="card__body">
+              <img class="card__brand" src="./images/card-logo.png" alt="Nike" />
+              <p class="-mt-1">Nike Rewards</p>
+              <h2 class="is-size-5 has-text-weight-bold">Free Event Access</h2>
+            </div>
+          </div>
+        </div>
+        <div class="column is-6-tablet is-4-desktop">
+          <div class="card">
+            <img class="card__img" src="./images/card-img.png" alt="" />
+            <span class="card__label card__label--fail">
+              <i class="fa-solid fa-circle-exclamation mr-1"></i> Sign In Fail</span
+            >
+
+            <div class="card__body">
+              <img class="card__brand" src="./images/card-logo.png" alt="Nike" />
+              <p class="-mt-1">Nike Rewards</p>
+              <p class="text-md has-text-weight-semibold mt-2">
+                You already have an account. <br />
+                Please Sign In
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="./js/bundle.js"></script>
