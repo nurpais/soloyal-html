@@ -41,11 +41,14 @@
     &--fail {
       background-color: $danger;
     }
+
+    &--linked {
+      background-color: $success;
+    }
   }
 
   &__brand {
-    height: 60px;
-    object-fit: contain;
+    align-self: center;
   }
 
   &__body {
@@ -85,10 +88,13 @@
     padding: 34px 16px 8px;
   }
 
-  &__form-heading {
-    font-size: $text-xs;
-    font-weight: 600;
-    line-height: 1.2;
+  &__back-button {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-size: 20px;
+    @extend .button-reset;
+    color: $white;
   }
 }
 

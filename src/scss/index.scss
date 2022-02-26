@@ -17,6 +17,7 @@
 @import '../../node_modules/bulma/sass/elements/title.sass';
 @import '../../node_modules/bulma/sass/elements/container.sass';
 @import '../../node_modules/bulma/sass/elements/button.sass';
+@import '../../node_modules/bulma/sass/elements/content.sass';
 @import '../../node_modules/bulma/sass/layout/section.sass';
 @import '../../node_modules/bulma/sass/form/_all.sass';
 @import '../../node_modules/bulma/sass/helpers/color.sass';
@@ -31,9 +32,12 @@
 // LAYOUTS
 @import 'layout/navbar';
 @import 'layout/container';
+@import 'layout/tabs';
+@import 'layout/carousel';
 
 // COMPONENTS
 @import 'components/notification';
 @import 'components/search-input';
 @import 'components/card';
 @import 'components/form';
+@import 'components/progress';

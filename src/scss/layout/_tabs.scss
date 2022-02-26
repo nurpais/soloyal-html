@@ -1,0 +1,25 @@
+.tab-buttons {
+  position: absolute;
+  top: 22px;
+  left: 48px;
+  display: flex;
+  align-items: center;
+
+  & > * + * {
+    margin-left: 12px;
+  }
+  &__item {
+    font-size: 20px;
+    color: $white;
+    @extend .button-reset;
+
+    &--active {
+      color: $primary;
+    }
+  }
+}
+
+.tab-content {
+  padding: 18px 20px 12px;
+  width: 100%;
+}

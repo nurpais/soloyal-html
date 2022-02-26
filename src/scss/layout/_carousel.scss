@@ -1,0 +1,46 @@
+.carousel {
+  &__pagination {
+    display: flex;
+    & > * + * {
+      margin-left: 10px;
+    }
+  }
+
+  &__pagination-item {
+    width: 24px;
+    height: 8px;
+    background: #c4c4c4;
+    border-radius: 3px;
+
+    &--active {
+      background: $primary;
+    }
+  }
+
+  &__content {
+    max-height: 132px;
+    padding-right: 1rem;
+    overflow: auto;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #767676;
+      border-radius: 3px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #464646;
+      border-radius: 3px;
+    }
+
+    strong {
+      color: $white;
+    }
+  }
+}
