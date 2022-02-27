@@ -1,12 +1,21 @@
-.carousel {
-  &__pagination {
-    display: flex;
-    & > * + * {
-      margin-left: 10px;
-    }
+.carousel-pagination {
+  display: flex;
+  & > * + * {
+    margin-left: 10px;
   }
 
-  &__pagination-item {
+  &--dots {
+    justify-content: center;
+    & > * + * {
+      margin-left: 8;
+    }
+  }
+  &--dots &__item {
+    width: 8px;
+    height: 8px;
+  }
+
+  &__item {
     width: 24px;
     height: 8px;
     background: #c4c4c4;
@@ -16,31 +25,46 @@
       background: $primary;
     }
   }
+}
 
-  &__content {
-    max-height: 132px;
-    padding-right: 1rem;
-    overflow: auto;
+.carousel__content {
+  max-height: 132px;
+  padding-right: 1rem;
+  overflow: auto;
 
-    /* width */
-    &::-webkit-scrollbar {
-      width: 12px;
-    }
+  /* width */
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
 
-    /* Track */
-    &::-webkit-scrollbar-track {
-      background: #767676;
-      border-radius: 3px;
-    }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #767676;
+    border-radius: 3px;
+  }
 
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-      background: #464646;
-      border-radius: 3px;
-    }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #464646;
+    border-radius: 3px;
+  }
 
-    strong {
-      color: $white;
-    }
+  strong {
+    color: $white;
+  }
+}
+
+.carousel-arrow {
+  @extend .button-reset;
+  color: $white;
+  position: absolute;
+  top: 32px;
+
+  &--prev {
+    left: -16px;
+  }
+
+  &--next {
+    right: -16px;
   }
 }
