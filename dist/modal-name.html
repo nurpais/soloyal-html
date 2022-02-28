@@ -8,8 +8,6 @@
     <script src="https://kit.fontawesome.com/b8e42dbd46.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="overlay"></div>
-
     <!-- Navbar -->
     <nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
       <div class="container">
@@ -571,6 +569,21 @@
         </div>
       </div>
     </main>
+
+    <div class="modal is-active">
+      <div class="modal-background"></div>
+      <div class="modal-content" style="background-image: url(./images/card-img.png)">
+        <img src="./images/card-logo.png" alt="Nike" />
+        <p class="is-size-7">Nike Rewards</p>
+        <p class="is-size-3 has-text-weight-bold mt-1">Enter Your Name</p>
+        <div class="flex-1 space-y-3 mt-3">
+          <input class="input is-lg" type="text" placeholder="First" />
+          <input class="input is-lg" type="text" placeholder="Last" />
+        </div>
+        <button class="button is-primary is-lg">Next</button>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
 
     <script src="./js/bundle.js"></script>
   </body>

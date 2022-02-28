@@ -8,8 +8,6 @@
     <script src="https://kit.fontawesome.com/b8e42dbd46.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="overlay"></div>
-
     <!-- Navbar -->
     <nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
       <div class="container">
@@ -571,6 +569,34 @@
         </div>
       </div>
     </main>
+
+    <div class="modal is-active is-light">
+      <div class="modal-background"></div>
+      <div class="modal-content" style="background-image: url(./images/card-img.png)">
+        <img class="modal-logo" src="./images/logo.svg" alt="Soloyal" />
+        <p class="is-size-3 has-text-weight-bold text-[#3F3F3F] mt-1">Your rewards are waiting!</p>
+        <a href="#" class="button is-lg mt-5">
+          <img class="!h-5" src="./images/google-logo.png" alt="" /> <span> Login with Google </span>
+        </a>
+
+        <div class="divider !my-5">
+          <span class="is-size-5 has-text-weight-medium text-[#777777]">OR</span>
+        </div>
+
+        <div class="flex-1 space-y-3">
+          <input class="input is-lg bg-[#ECECEC]" type="text" placeholder="Email" />
+        </div>
+        <button class="button is-primary is-lg mt-2.5">
+          <img class="w-6" src="./images/mail.png" alt="" />
+          <span>Login with Email</span>
+        </button>
+        <p class="mt-2.5 text-[#595959]">
+          SoLoyal’s <a class="has-text-primary" href="#">Terms of Use</a> &
+          <a class="has-text-primary" href="#">Privacy Policy</a> apply.
+        </p>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
 
     <script src="./js/bundle.js"></script>
   </body>

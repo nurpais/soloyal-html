@@ -3,3 +3,40 @@
   height: 32px;
   line-height: 1.2;
 }
+
+.button > * + * {
+  margin-left: 15px;
+}
+
+.input.is-lg,
+.button.is-lg {
+  height: 48px;
+  font-size: 16px;
+}
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1;
+
+  &:hover {
+    color: $white;
+  }
+
+  input[type='radio'] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    &:checked {
+      background-color: $primary;
+    }
+  }
+}

@@ -27,7 +27,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/index.scss */ \"./src/scss/index.scss\");\n/* harmony import */ var _js_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/navbar */ \"./src/js/navbar.js\");\n/* harmony import */ var _js_navbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_navbar__WEBPACK_IMPORTED_MODULE_1__);\n// SCSS\n\n\n// SCRIPTS\n\n\n\n//# sourceURL=webpack://soloyal/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/index.scss */ \"./src/scss/index.scss\");\n/* harmony import */ var _js_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/navbar */ \"./src/js/navbar.js\");\n/* harmony import */ var _js_navbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_navbar__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_hover__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/hover */ \"./src/js/hover.js\");\n/* harmony import */ var _js_hover__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_hover__WEBPACK_IMPORTED_MODULE_2__);\n// SCSS\n\n\n// SCRIPTS\n\n\n\n\n//# sourceURL=webpack://soloyal/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/hover.js":
+/*!*************************!*\
+  !*** ./src/js/hover.js ***!
+  \*************************/
+/***/ (() => {
+
+eval("document.querySelectorAll('.card').forEach((card) => {\n  card.addEventListener('mouseenter', function (e) {\n    document.documentElement.classList.add('overlay-active')\n    this.classList.add('active-card')\n  })\n\n  card.addEventListener('mouseleave', function (e) {\n    document.documentElement.classList.remove('overlay-active')\n    this.classList.remove('active-card')\n  })\n})\n\n\n//# sourceURL=webpack://soloyal/./src/js/hover.js?");
 
 /***/ }),
 

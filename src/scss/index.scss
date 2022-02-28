@@ -13,6 +13,7 @@
 @import '../../node_modules/bulma/sass/base/_all.sass';
 @import '../../node_modules/bulma/sass/grid/_all.sass';
 @import '../../node_modules/bulma/sass/components/navbar.sass';
+@import '../../node_modules/bulma/sass/components/modal.sass';
 @import '../../node_modules/bulma/sass/elements/notification.sass';
 @import '../../node_modules/bulma/sass/elements/title.sass';
 @import '../../node_modules/bulma/sass/elements/container.sass';
@@ -34,6 +35,7 @@
 @import 'layout/container';
 @import 'layout/tabs';
 @import 'layout/carousel';
+@import 'layout/modal';
 
 // COMPONENTS
 @import 'components/notification';

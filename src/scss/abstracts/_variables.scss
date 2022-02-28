@@ -91,9 +91,19 @@ $input-icon-active-color: #454545;
 // https://bulma.io/documentation/elements/button/
 $button-padding-vertical: 10px;
 $button-font-size: $text-sm;
+$button-border-color: #b9b9b9;
 
 // DIVIDER
 // https://bulma-divider.netlify.app/how-to/customize/
 $divider-font-size: $text-xs;
 $divider-margin-size: 5px;
 $divider-text-color: #bababa;
+
+// MODAL
+// https://bulma.io/documentation/components/modal/#variables
+$modal-content-width: 396px;
+$modal-content-radius: 20px;
+$modal-content-background-color: $white;
+$modal-content-height: 410px;
+$modal-content-margin-mobile: 10px;
+$modal-padding: 20px 20px;
