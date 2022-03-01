@@ -9,7 +9,7 @@
 /*!****************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/scss/index.scss (2) ***!
   \****************************************************************************************************************************************************************************************/
-.button-reset, .card__back-button, .carousel-arrow, .tab-buttons__item {
+.button-reset, .card__back-button, .search-input__clear, .carousel-arrow, .tab-buttons__item {
   background-color: transparent;
   border: none;
   outline: none;
@@ -6735,6 +6735,12 @@ a.has-text-error-dark:hover, a.has-text-error-dark:focus {
 .mt-2{
   margin-top: 0.5rem;
 }
+.ml-6{
+  margin-left: 1.5rem;
+}
+.ml-auto{
+  margin-left: auto;
+}
 .mt-9{
   margin-top: 2.25rem;
 }
@@ -6779,6 +6785,9 @@ a.has-text-error-dark:hover, a.has-text-error-dark:focus {
 }
 .grid{
   display: grid;
+}
+.hidden{
+  display: none;
 }
 .\!h-5{
   height: 1.25rem !important;
@@ -7120,6 +7129,7 @@ a.has-text-error-dark:hover, a.has-text-error-dark:focus {
 }
 .modal {
   padding: 20px 20px;
+  z-index: 999;
 }
 .modal.is-light .modal-content {
   background-image: none !important;
@@ -7155,17 +7165,112 @@ a.has-text-error-dark:hover, a.has-text-error-dark:focus {
 .notification > *:not(:last-child) {
   margin-right: 0.75rem;
 }
-.control .icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.search-input {
+  height: 50px;
+  max-width: 656px;
+  width: 100%;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #3e3e3e;
 }
-.search-form {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 2rem;
-  max-width: 688px;
-  padding: 0 1rem;
+.search-input__icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
+  color: #757c88;
+}
+.search-input__clear {
+  color: #9b9b9b;
+  font-size: 22px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+.search-input--sm {
+  max-width: 280px;
+  height: 40px;
+}
+.search-input--sm .search-input__icon {
+  left: 15px;
+  font-size: 20px;
+}
+.search-input--sm .search-input__clear {
+  font-size: 18px;
+}
+.search-input > input {
+  width: 100%;
+  height: 100%;
+  background-color: #3e3e3e;
+  border: 1px solid #323232;
+  padding-left: 66px;
+  padding-right: 46px;
+  border-radius: 3px;
+}
+.search-input > input::-moz-placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+.search-input > input:-ms-input-placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+.search-input > input, .search-input > input::placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+.search-input > input:focus {
+  border-color: #00a3ff;
+  outline: none;
+}
+.search-input > input:not(:-moz-placeholder-shown) ~ .search-input__clear {
+  display: block !important;
+}
+.search-input > input:not(:-ms-input-placeholder) ~ .search-input__clear {
+  display: block !important;
+}
+.search-input > input:not(:placeholder-shown) ~ .search-input__clear {
+  display: block !important;
+}
+.search-input--sm > input {
+  padding-left: 46px;
+}
+.search-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 160;
+  background-color: #121212;
+  padding: 20px 0;
+  opacity: 0;
+  visibility: hidden;
+  will-change: opacity, visibility;
+  transition: opacity 0.14s ease-out, visibility 0.14s ease-out;
+}
+.search-bar__logo {
+  width: 136px;
+  display: inline-block;
+}
+.search-bar__logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+.search-bar__content {
+  display: flex;
+  align-items: center;
+}
+.search-bar--active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease-in, visibility 0.2s ease-in;
 }
 .overlay-active .card::before {
   opacity: 1;
@@ -7419,6 +7524,9 @@ a.has-text-error-dark:hover, a.has-text-error-dark:focus {
   }
   .md\:-mt-2{
     margin-top: -0.5rem;
+  }
+  .md\:block{
+    display: block;
   }
   .md\:pt-24{
     padding-top: 6rem;

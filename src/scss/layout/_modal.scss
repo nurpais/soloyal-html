@@ -1,5 +1,6 @@
 .modal {
   padding: $modal-padding;
+  z-index: 999;
   &.is-light .modal-content {
     background-image: none !important;
     background-color: $white;

@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/index.scss */ \"./src/scss/index.scss\");\n/* harmony import */ var _js_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/navbar */ \"./src/js/navbar.js\");\n/* harmony import */ var _js_navbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_navbar__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_hover__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/hover */ \"./src/js/hover.js\");\n/* harmony import */ var _js_hover__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_hover__WEBPACK_IMPORTED_MODULE_2__);\n// SCSS\n\n\n// SCRIPTS\n\n\n\n\n//# sourceURL=webpack://soloyal/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/index.scss */ \"./src/scss/index.scss\");\n/* harmony import */ var _js_navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/navbar */ \"./src/js/navbar.js\");\n/* harmony import */ var _js_navbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_navbar__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_hover__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/hover */ \"./src/js/hover.js\");\n/* harmony import */ var _js_hover__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_hover__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/scroll */ \"./src/js/scroll.js\");\n/* harmony import */ var _js_scroll__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_scroll__WEBPACK_IMPORTED_MODULE_3__);\n// SCSS\n\n\n// SCRIPTS\n\n\n\n\n\n//# sourceURL=webpack://soloyal/./src/index.js?");
 
 /***/ }),
 
@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
   \*************************/
 /***/ (() => {
 
-eval("document.querySelectorAll('.card').forEach((card) => {\n  card.addEventListener('mouseenter', function (e) {\n    document.documentElement.classList.add('overlay-active')\n    this.classList.add('active-card')\n  })\n\n  card.addEventListener('mouseleave', function (e) {\n    document.documentElement.classList.remove('overlay-active')\n    this.classList.remove('active-card')\n  })\n})\n\n\n//# sourceURL=webpack://soloyal/./src/js/hover.js?");
+eval("if (document.querySelector('.card')) {\n  document.querySelectorAll('.card').forEach((card) => {\n    card.addEventListener('mouseenter', function (e) {\n      document.documentElement.classList.add('overlay-active')\n      this.classList.add('active-card')\n    })\n\n    card.addEventListener('mouseleave', function (e) {\n      document.documentElement.classList.remove('overlay-active')\n      this.classList.remove('active-card')\n    })\n  })\n}\n\n\n//# sourceURL=webpack://soloyal/./src/js/hover.js?");
 
 /***/ }),
 
@@ -48,6 +48,16 @@ eval("document.querySelectorAll('.card').forEach((card) => {\n  card.addEventLis
 /***/ (() => {
 
 eval("document.addEventListener('DOMContentLoaded', () => {\n  // Get all \"navbar-burger\" elements\n  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)\n\n  // Check if there are any navbar burgers\n  if ($navbarBurgers.length > 0) {\n    // Add a click event on each of them\n    $navbarBurgers.forEach((el) => {\n      el.addEventListener('click', () => {\n        // Get the target from the \"data-target\" attribute\n        const target = el.dataset.target\n        const $target = document.getElementById(target)\n\n        // Toggle the \"is-active\" class on both the \"navbar-burger\" and the \"navbar-menu\"\n        el.classList.toggle('is-active')\n        $target.classList.toggle('is-active')\n      })\n    })\n  }\n\n  // Hide the menu when clicked outside\n  document.documentElement.addEventListener('click', (e) => {\n    if (!Boolean(e.target.closest('.navbar'))) {\n      document.querySelector('#navbar').classList.remove('is-active')\n      document.querySelector('.navbar-burger').classList.remove('is-active')\n    }\n  })\n})\n\n\n//# sourceURL=webpack://soloyal/./src/js/navbar.js?");
+
+/***/ }),
+
+/***/ "./src/js/scroll.js":
+/*!**************************!*\
+  !*** ./src/js/scroll.js ***!
+  \**************************/
+/***/ (() => {
+
+eval("if (document.querySelector('.search-bar')) {\n  const searchBar = document.querySelector('.search-bar')\n\n  window.addEventListener('scroll', function (e) {\n    if (window.scrollY >= 350) {\n      searchBar.classList.add('search-bar--active')\n    } else {\n      searchBar.classList.remove('search-bar--active')\n    }\n  })\n}\n\n\n//# sourceURL=webpack://soloyal/./src/js/scroll.js?");
 
 /***/ })
 
