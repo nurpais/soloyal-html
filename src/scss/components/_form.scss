@@ -1,11 +1,24 @@
 .input,
 .button {
-  height: 32px;
+  height: 48px;
   line-height: 1.2;
+
+  @include tablet {
+    height: 32px;
+  }
 }
 
 .button > * + * {
   margin-left: 15px;
+}
+
+.button {
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    transition: all 0.2s ease-in;
+    filter: brightness(90%);
+  }
 }
 
 .input.is-lg,
